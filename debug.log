@@ -13492,3 +13492,43 @@ DEBUG 2026-05-08 12:39:30,072 autoreload File C:\xampp\htdocs\servidor\django-ti
 DEBUG 2026-05-08 12:39:30,075 autoreload File C:\xampp\htdocs\servidor\django-ticket\venv\Lib\site-packages\django\contrib\auth\migrations\0012_alter_user_first_name_max_length.py first seen with mtime 1778214673.4342911
 DEBUG 2026-05-08 12:39:30,078 autoreload File C:\xampp\htdocs\servidor\django-ticket\api\migrations\__init__.py first seen with mtime 1778216921.0756807
 DEBUG 2026-05-08 12:39:30,079 autoreload File C:\xampp\htdocs\servidor\django-ticket\venv\Lib\site-packages\django\contrib\auth\migrations\0003_alter_user_email_max_length.py first seen with mtime 1778214673.4252715
+INFO 2026-05-08 12:40:04,475 log "GET /api/schema/swagger-ui/ HTTP/1.1" 200 4653
+INFO 2026-05-08 12:40:04,900 log "GET /api/schema/ HTTP/1.1" 200 68960
+DEBUG 2026-05-08 12:40:05,592 autoreload File C:\xampp\htdocs\servidor\django-ticket\venv\Lib\site-packages\django\contrib\messages\context_processors.py first seen with mtime 1778214676.9016745
+DEBUG 2026-05-08 12:40:05,594 autoreload File C:\xampp\htdocs\servidor\django-ticket\venv\Lib\site-packages\django\contrib\messages\storage\cookie.py first seen with mtime 1778214676.914981
+DEBUG 2026-05-08 12:40:05,595 autoreload File C:\xampp\htdocs\servidor\django-ticket\venv\Lib\site-packages\django\template\context_processors.py first seen with mtime 1778214679.0806313
+DEBUG 2026-05-08 12:40:05,603 autoreload File C:\xampp\htdocs\servidor\django-ticket\venv\Lib\site-packages\django\contrib\messages\storage\fallback.py first seen with mtime 1778214676.9174967
+DEBUG 2026-05-08 12:40:05,604 autoreload File C:\xampp\htdocs\servidor\django-ticket\venv\Lib\site-packages\django\contrib\auth\context_processors.py first seen with mtime 1778214672.9380672
+DEBUG 2026-05-08 12:40:05,612 autoreload File C:\xampp\htdocs\servidor\django-ticket\venv\Lib\site-packages\django\contrib\sessions\serializers.py first seen with mtime 1778214677.7132442
+DEBUG 2026-05-08 12:40:05,618 autoreload File C:\xampp\htdocs\servidor\django-ticket\venv\Lib\site-packages\django\contrib\messages\storage\session.py first seen with mtime 1778214676.9185169
+DEBUG 2026-05-08 12:40:05,620 autoreload File C:\xampp\htdocs\servidor\django-ticket\venv\Lib\site-packages\django\middleware\csp.py first seen with mtime 1778214679.0543823
+DEBUG 2026-05-08 12:40:05,624 autoreload File C:\xampp\htdocs\servidor\django-ticket\venv\Lib\site-packages\django\utils\csp.py first seen with mtime 1778214679.1465275
+DEBUG 2026-05-08 12:40:05,632 autoreload File C:\Python314\Lib\encodings\unicode_escape.py first seen with mtime 1764976580.0
+DEBUG 2026-05-08 12:40:07,011 autoreload File C:\xampp\htdocs\servidor\django-ticket\venv\Lib\site-packages\rest_framework\authtoken\models.py first seen with mtime 1778214685.7856674
+DEBUG 2026-05-08 12:40:07,026 autoreload File C:\xampp\htdocs\servidor\django-ticket\venv\Lib\site-packages\rest_framework\authtoken\__init__.py first seen with mtime 1778214685.7831438
+DEBUG 2026-05-08 12:40:07,045 autoreload File C:\xampp\htdocs\servidor\django-ticket\venv\Lib\site-packages\rest_framework\authtoken\views.py first seen with mtime 1778214685.7893305
+DEBUG 2026-05-08 12:40:07,048 autoreload File C:\xampp\htdocs\servidor\django-ticket\venv\Lib\site-packages\rest_framework\authtoken\serializers.py first seen with mtime 1778214685.7883303
+DEBUG 2026-05-08 12:40:07,052 autoreload File C:\xampp\htdocs\servidor\django-ticket\venv\Lib\site-packages\rest_framework_simplejwt\serializers.py first seen with mtime 1778214686.8834522
+DEBUG 2026-05-08 12:40:07,053 autoreload File C:\xampp\htdocs\servidor\django-ticket\venv\Lib\site-packages\drf_spectacular\hooks.py first seen with mtime 1778214687.1244705
+WARNING 2026-05-08 12:40:11,891 log Unauthorized: /api/areas/
+WARNING 2026-05-08 12:40:11,893 log "GET /api/areas/ HTTP/1.1" 401 58
+DEBUG 2026-05-08 12:40:27,724 utils (0.011) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."username" = 'admin' LIMIT 21; args=('admin',); alias=default
+INFO 2026-05-08 12:40:28,950 log "POST /api/auth/login/ HTTP/1.1" 200 489
+DEBUG 2026-05-08 12:40:29,629 autoreload File C:\xampp\htdocs\servidor\django-ticket\venv\Lib\site-packages\jwt\__init__.py first seen with mtime 1778214657.8036451
+DEBUG 2026-05-08 12:40:29,642 autoreload File C:\xampp\htdocs\servidor\django-ticket\venv\Lib\site-packages\jwt\api_jws.py first seen with mtime 1778214657.8060133
+DEBUG 2026-05-08 12:40:29,645 autoreload File C:\xampp\htdocs\servidor\django-ticket\venv\Lib\site-packages\jwt\exceptions.py first seen with mtime 1778214657.807278
+DEBUG 2026-05-08 12:40:29,646 autoreload File C:\xampp\htdocs\servidor\django-ticket\venv\Lib\site-packages\rest_framework_simplejwt\state.py first seen with mtime 1778214686.886102
+DEBUG 2026-05-08 12:40:29,651 autoreload File C:\xampp\htdocs\servidor\django-ticket\venv\Lib\site-packages\jwt\api_jwt.py first seen with mtime 1778214657.8060133
+DEBUG 2026-05-08 12:40:29,653 autoreload File C:\xampp\htdocs\servidor\django-ticket\venv\Lib\site-packages\jwt\types.py first seen with mtime 1778214657.8100407
+DEBUG 2026-05-08 12:40:29,658 autoreload File C:\xampp\htdocs\servidor\django-ticket\venv\Lib\site-packages\jwt\utils.py first seen with mtime 1778214657.8100407
+DEBUG 2026-05-08 12:40:29,670 autoreload File C:\xampp\htdocs\servidor\django-ticket\venv\Lib\site-packages\jwt\jwks_client.py first seen with mtime 1778214657.808879
+DEBUG 2026-05-08 12:40:29,684 autoreload File C:\xampp\htdocs\servidor\django-ticket\venv\Lib\site-packages\jwt\jwk_set_cache.py first seen with mtime 1778214657.807781
+DEBUG 2026-05-08 12:40:29,719 autoreload File C:\xampp\htdocs\servidor\django-ticket\venv\Lib\site-packages\jwt\warnings.py first seen with mtime 1778214657.8112214
+DEBUG 2026-05-08 12:40:29,722 autoreload File C:\xampp\htdocs\servidor\django-ticket\venv\Lib\site-packages\rest_framework_simplejwt\backends.py first seen with mtime 1778214686.8794115
+DEBUG 2026-05-08 12:40:29,738 autoreload File C:\xampp\htdocs\servidor\django-ticket\venv\Lib\site-packages\jwt\api_jwk.py first seen with mtime 1778214657.8050134
+DEBUG 2026-05-08 12:40:29,754 autoreload File C:\xampp\htdocs\servidor\django-ticket\venv\Lib\site-packages\jwt\algorithms.py first seen with mtime 1778214657.8050134
+DEBUG 2026-05-08 12:41:04,357 utils (0.001) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 1 LIMIT 21; args=(1,); alias=default
+DEBUG 2026-05-08 12:41:04,362 utils (0.003) SELECT "services_areas"."id", "services_areas"."name", "services_areas"."is_active", "services_areas"."created_at" FROM "services_areas"; args=(); alias=default
+INFO 2026-05-08 12:41:04,365 log "GET /api/areas/ HTTP/1.1" 200 192
+DEBUG 2026-05-08 12:41:04,801 autoreload File C:\xampp\htdocs\servidor\django-ticket\venv\Lib\site-packages\tzdata\zoneinfo\__init__.py first seen with mtime 1778214657.0958862
+DEBUG 2026-05-08 12:41:04,817 autoreload File C:\xampp\htdocs\servidor\django-ticket\venv\Lib\site-packages\tzdata\__init__.py first seen with mtime 1778214657.0721295
