@@ -22,39 +22,46 @@ from rest_framework.permissions import IsAuthenticated
 class AreasView(generics.ListCreateAPIView):
     queryset = Areas.objects.all()
     serializer_class = AreaSerializer
-    #permission_classes = [IsAuthenticated]
+    permission_classes = [IsAuthenticated]
 
 @extend_schema(tags=['Servicios'])
 class ManageAreasView(generics.RetrieveUpdateDestroyAPIView):
     queryset = Areas.objects.all()
     serializer_class = AreaSerializer
+    permission_classes = [IsAuthenticated]
 
 @extend_schema(tags=['Servicios'])
 class SedesView(generics.ListCreateAPIView):
     queryset = Sedes.objects.all()
     serializer_class = SedeSerializer
+    permission_classes = [IsAuthenticated]
 
 @extend_schema(tags=['Servicios'])
 class ManageSedesView(generics.RetrieveUpdateDestroyAPIView):
     queryset = Sedes.objects.all()
     serializer_class = SedeSerializer
+    permission_classes = [IsAuthenticated]
 
 @extend_schema(tags=['Servicios'])
 class AreasSedesView(generics.ListCreateAPIView):
     queryset = AreasSedes.objects.all()
     serializer_class = AreaSedeSerializer
+    permission_classes = [IsAuthenticated]
 
 @extend_schema(tags=['Servicios'])
 class ManageAreasSedesView(generics.RetrieveUpdateDestroyAPIView):
     queryset = AreasSedes.objects.all()
     serializer_class = AreaSedeSerializer
+    permission_classes = [IsAuthenticated]
 
 @extend_schema(tags=['Servicios'])
 class CategoriesView(generics.ListCreateAPIView):
     queryset = Categories.objects.all()
     serializer_class = CategorySerializer
+    permission_classes = [IsAuthenticated]
 
 @extend_schema(tags=['Servicios'])
 class ManageCategoriesView(generics.RetrieveUpdateDestroyAPIView):
     queryset = Categories.objects.all()
     serializer_class = CategorySerializer
+    permission_classes = [IsAuthenticated]
