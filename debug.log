@@ -12371,3 +12371,67 @@ DEBUG 2026-05-08 12:09:42,876 autoreload File C:\xampp\htdocs\servidor\django-ti
 DEBUG 2026-05-08 12:09:42,877 autoreload File C:\xampp\htdocs\servidor\django-ticket\venv\Lib\site-packages\django\contrib\contenttypes\migrations\__init__.py first seen with mtime 1778214674.0321429
 DEBUG 2026-05-08 12:09:42,877 autoreload File C:\xampp\htdocs\servidor\django-ticket\venv\Lib\site-packages\django\contrib\auth\migrations\0012_alter_user_first_name_max_length.py first seen with mtime 1778214673.4342911
 DEBUG 2026-05-08 12:09:42,881 autoreload File C:\xampp\htdocs\servidor\django-ticket\venv\Lib\site-packages\django\contrib\sessions\migrations\__init__.py first seen with mtime 1778214678.1580954
+INFO 2026-05-08 12:23:50,691 log "GET /api/schema/swagger-ui/ HTTP/1.1" 200 4653
+INFO 2026-05-08 12:23:51,140 log "GET /api/schema/ HTTP/1.1" 200 69536
+DEBUG 2026-05-08 12:23:51,843 autoreload File C:\xampp\htdocs\servidor\django-ticket\venv\Lib\site-packages\rest_framework\authtoken\__init__.py first seen with mtime 1778214685.7831438
+DEBUG 2026-05-08 12:23:51,847 autoreload File C:\xampp\htdocs\servidor\django-ticket\venv\Lib\site-packages\django\contrib\auth\context_processors.py first seen with mtime 1778214672.9380672
+DEBUG 2026-05-08 12:23:51,854 autoreload File C:\xampp\htdocs\servidor\django-ticket\venv\Lib\site-packages\django\middleware\csp.py first seen with mtime 1778214679.0543823
+DEBUG 2026-05-08 12:23:51,857 autoreload File C:\xampp\htdocs\servidor\django-ticket\venv\Lib\site-packages\django\contrib\messages\storage\fallback.py first seen with mtime 1778214676.9174967
+DEBUG 2026-05-08 12:23:51,875 autoreload File C:\xampp\htdocs\servidor\django-ticket\venv\Lib\site-packages\django\contrib\messages\storage\cookie.py first seen with mtime 1778214676.914981
+DEBUG 2026-05-08 12:23:51,878 autoreload File C:\Python314\Lib\encodings\unicode_escape.py first seen with mtime 1764976580.0
+DEBUG 2026-05-08 12:23:51,881 autoreload File C:\xampp\htdocs\servidor\django-ticket\venv\Lib\site-packages\django\contrib\sessions\serializers.py first seen with mtime 1778214677.7132442
+DEBUG 2026-05-08 12:23:51,896 autoreload File C:\xampp\htdocs\servidor\django-ticket\venv\Lib\site-packages\django\template\context_processors.py first seen with mtime 1778214679.0806313
+DEBUG 2026-05-08 12:23:51,941 autoreload File C:\xampp\htdocs\servidor\django-ticket\venv\Lib\site-packages\django\contrib\messages\context_processors.py first seen with mtime 1778214676.9016745
+DEBUG 2026-05-08 12:23:51,945 autoreload File C:\xampp\htdocs\servidor\django-ticket\venv\Lib\site-packages\rest_framework\authtoken\models.py first seen with mtime 1778214685.7856674
+DEBUG 2026-05-08 12:23:51,947 autoreload File C:\xampp\htdocs\servidor\django-ticket\venv\Lib\site-packages\rest_framework_simplejwt\serializers.py first seen with mtime 1778214686.8834522
+DEBUG 2026-05-08 12:23:51,955 autoreload File C:\xampp\htdocs\servidor\django-ticket\venv\Lib\site-packages\rest_framework\authtoken\views.py first seen with mtime 1778214685.7893305
+DEBUG 2026-05-08 12:23:51,967 autoreload File C:\xampp\htdocs\servidor\django-ticket\venv\Lib\site-packages\rest_framework\authtoken\serializers.py first seen with mtime 1778214685.7883303
+DEBUG 2026-05-08 12:23:51,968 autoreload File C:\xampp\htdocs\servidor\django-ticket\venv\Lib\site-packages\django\contrib\messages\storage\session.py first seen with mtime 1778214676.9185169
+DEBUG 2026-05-08 12:23:51,972 autoreload File C:\xampp\htdocs\servidor\django-ticket\venv\Lib\site-packages\django\utils\csp.py first seen with mtime 1778214679.1465275
+DEBUG 2026-05-08 12:23:53,354 autoreload File C:\xampp\htdocs\servidor\django-ticket\venv\Lib\site-packages\drf_spectacular\hooks.py first seen with mtime 1778214687.1244705
+DEBUG 2026-05-08 12:24:17,401 utils (0.004) SELECT "authentication_roles"."id", "authentication_roles"."name", "authentication_roles"."created_at" FROM "authentication_roles"; args=(); alias=default
+INFO 2026-05-08 12:24:17,402 log "GET /api/roles/ HTTP/1.1" 200 2
+DEBUG 2026-05-08 12:24:54,497 utils (0.010) SELECT 1 AS "a" FROM "authentication_roles" WHERE "authentication_roles"."name" = 'ADMINISTRADOR' LIMIT 1; args=(1, 'ADMINISTRADOR'); alias=default
+DEBUG 2026-05-08 12:24:54,515 utils (0.016) INSERT INTO "authentication_roles" ("name", "created_at") VALUES ('ADMINISTRADOR', '2026-05-08T17:24:54.498756+00:00'::timestamptz) RETURNING "authentication_roles"."id"; args=('ADMINISTRADOR', datetime.datetime(2026, 5, 8, 17, 24, 54, 498756, tzinfo=datetime.timezone.utc)); alias=default
+INFO 2026-05-08 12:24:54,519 log "POST /api/roles/ HTTP/1.1" 201 74
+DEBUG 2026-05-08 12:24:55,699 autoreload File C:\xampp\htdocs\servidor\django-ticket\venv\Lib\site-packages\tzdata\zoneinfo\__init__.py first seen with mtime 1778214657.0958862
+DEBUG 2026-05-08 12:24:55,721 autoreload File C:\xampp\htdocs\servidor\django-ticket\venv\Lib\site-packages\tzdata\__init__.py first seen with mtime 1778214657.0721295
+WARNING 2026-05-08 12:25:06,561 log Bad Request: /api/roles/
+WARNING 2026-05-08 12:25:06,562 log "POST /api/roles/ HTTP/1.1" 400 47
+WARNING 2026-05-08 12:25:36,040 log Bad Request: /api/roles/
+WARNING 2026-05-08 12:25:36,042 log "POST /api/roles/ HTTP/1.1" 400 47
+DEBUG 2026-05-08 12:25:45,751 utils (0.001) SELECT 1 AS "a" FROM "authentication_roles" WHERE "authentication_roles"."name" = 'SOPORTE' LIMIT 1; args=(1, 'SOPORTE'); alias=default
+DEBUG 2026-05-08 12:25:45,755 utils (0.003) INSERT INTO "authentication_roles" ("name", "created_at") VALUES ('SOPORTE', '2026-05-08T17:25:45.752491+00:00'::timestamptz) RETURNING "authentication_roles"."id"; args=('SOPORTE', datetime.datetime(2026, 5, 8, 17, 25, 45, 752491, tzinfo=datetime.timezone.utc)); alias=default
+INFO 2026-05-08 12:25:45,756 log "POST /api/roles/ HTTP/1.1" 201 68
+DEBUG 2026-05-08 12:25:51,496 utils (0.004) SELECT "authentication_roles"."id", "authentication_roles"."name", "authentication_roles"."created_at" FROM "authentication_roles"; args=(); alias=default
+INFO 2026-05-08 12:25:51,499 log "GET /api/roles/ HTTP/1.1" 200 145
+DEBUG 2026-05-08 12:27:15,541 utils (0.002) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user"; args=(); alias=default
+INFO 2026-05-08 12:27:15,543 log "GET /api/users/ HTTP/1.1" 200 86
+DEBUG 2026-05-08 12:28:46,057 utils (0.005) SELECT "authentication_usersroles"."id", "authentication_usersroles"."user_id", "authentication_usersroles"."role_id", "authentication_usersroles"."created_at" FROM "authentication_usersroles"; args=(); alias=default
+INFO 2026-05-08 12:28:46,058 log "GET /api/users/roles/ HTTP/1.1" 200 2
+DEBUG 2026-05-08 12:29:34,407 utils (0.004) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 1 LIMIT 21; args=(1,); alias=default
+DEBUG 2026-05-08 12:29:34,408 utils (0.001) SELECT "authentication_roles"."id", "authentication_roles"."name", "authentication_roles"."created_at" FROM "authentication_roles" WHERE "authentication_roles"."id" = 1 LIMIT 21; args=(1,); alias=default
+DEBUG 2026-05-08 12:29:34,421 utils (0.012) INSERT INTO "authentication_usersroles" ("user_id", "role_id", "created_at") VALUES (1, 1, '2026-05-08T17:29:34.409341+00:00'::timestamptz) RETURNING "authentication_usersroles"."id"; args=(1, 1, datetime.datetime(2026, 5, 8, 17, 29, 34, 409341, tzinfo=datetime.timezone.utc)); alias=default
+INFO 2026-05-08 12:29:34,422 log "POST /api/users/roles/ HTTP/1.1" 201 69
+DEBUG 2026-05-08 12:29:42,111 utils (0.012) SELECT "authentication_usersroles"."id", "authentication_usersroles"."user_id", "authentication_usersroles"."role_id", "authentication_usersroles"."created_at" FROM "authentication_usersroles"; args=(); alias=default
+INFO 2026-05-08 12:29:42,112 log "GET /api/users/roles/ HTTP/1.1" 200 71
+DEBUG 2026-05-08 12:30:51,489 utils (0.004) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."username" = 'admin' LIMIT 21; args=('admin',); alias=default
+INFO 2026-05-08 12:30:52,749 log "POST /api/auth/login/ HTTP/1.1" 200 489
+DEBUG 2026-05-08 12:30:53,926 autoreload File C:\xampp\htdocs\servidor\django-ticket\venv\Lib\site-packages\jwt\api_jwt.py first seen with mtime 1778214657.8060133
+DEBUG 2026-05-08 12:30:53,929 autoreload File C:\xampp\htdocs\servidor\django-ticket\venv\Lib\site-packages\jwt\api_jws.py first seen with mtime 1778214657.8060133
+DEBUG 2026-05-08 12:30:53,930 autoreload File C:\xampp\htdocs\servidor\django-ticket\venv\Lib\site-packages\rest_framework_simplejwt\backends.py first seen with mtime 1778214686.8794115
+DEBUG 2026-05-08 12:30:53,934 autoreload File C:\xampp\htdocs\servidor\django-ticket\venv\Lib\site-packages\jwt\utils.py first seen with mtime 1778214657.8100407
+DEBUG 2026-05-08 12:30:53,940 autoreload File C:\xampp\htdocs\servidor\django-ticket\venv\Lib\site-packages\jwt\__init__.py first seen with mtime 1778214657.8036451
+DEBUG 2026-05-08 12:30:53,952 autoreload File C:\xampp\htdocs\servidor\django-ticket\venv\Lib\site-packages\jwt\jwk_set_cache.py first seen with mtime 1778214657.807781
+DEBUG 2026-05-08 12:30:53,960 autoreload File C:\xampp\htdocs\servidor\django-ticket\venv\Lib\site-packages\rest_framework_simplejwt\state.py first seen with mtime 1778214686.886102
+DEBUG 2026-05-08 12:30:53,965 autoreload File C:\xampp\htdocs\servidor\django-ticket\venv\Lib\site-packages\jwt\types.py first seen with mtime 1778214657.8100407
+DEBUG 2026-05-08 12:30:53,966 autoreload File C:\xampp\htdocs\servidor\django-ticket\venv\Lib\site-packages\jwt\algorithms.py first seen with mtime 1778214657.8050134
+DEBUG 2026-05-08 12:30:53,967 autoreload File C:\xampp\htdocs\servidor\django-ticket\venv\Lib\site-packages\jwt\warnings.py first seen with mtime 1778214657.8112214
+DEBUG 2026-05-08 12:30:53,975 autoreload File C:\xampp\htdocs\servidor\django-ticket\venv\Lib\site-packages\jwt\exceptions.py first seen with mtime 1778214657.807278
+DEBUG 2026-05-08 12:30:53,978 autoreload File C:\xampp\htdocs\servidor\django-ticket\venv\Lib\site-packages\jwt\jwks_client.py first seen with mtime 1778214657.808879
+DEBUG 2026-05-08 12:30:53,980 autoreload File C:\xampp\htdocs\servidor\django-ticket\venv\Lib\site-packages\jwt\api_jwk.py first seen with mtime 1778214657.8050134
+DEBUG 2026-05-08 12:32:01,329 utils (0.002) SELECT 1 AS "a" FROM "auth_user" WHERE "auth_user"."username" = 'wherrera' LIMIT 1; args=(1, 'wherrera'); alias=default
+DEBUG 2026-05-08 12:32:02,454 utils (0.004) INSERT INTO "auth_user" ("password", "last_login", "is_superuser", "username", "first_name", "last_name", "email", "is_staff", "is_active", "date_joined") VALUES ('pbkdf2_sha256$1200000$kOjz905mDLiJ1N4WMWLd0m$xwxxctv2+qvn4c2cDNEEbaE7huEk1uuV9Z6m2S01zx0=', NULL, false, 'wherrera', 'Wilmer', 'Herrera', 'wherrera@ticket.com', false, true, '2026-05-08T17:32:01.375022+00:00'::timestamptz) RETURNING "auth_user"."id"; args=('pbkdf2_sha256$1200000$kOjz905mDLiJ1N4WMWLd0m$xwxxctv2+qvn4c2cDNEEbaE7huEk1uuV9Z6m2S01zx0=', None, False, 'wherrera', 'Wilmer', 'Herrera', 'wherrera@ticket.com', False, True, datetime.datetime(2026, 5, 8, 17, 32, 1, 375022, tzinfo=datetime.timezone.utc)); alias=default
+INFO 2026-05-08 12:32:02,455 log "POST /api/users/ HTTP/1.1" 201 104
+DEBUG 2026-05-08 12:32:15,647 utils (0.001) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user"; args=(); alias=default
+INFO 2026-05-08 12:32:15,648 log "GET /api/users/ HTTP/1.1" 200 191
