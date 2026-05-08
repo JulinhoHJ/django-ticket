@@ -17,23 +17,28 @@ from drf_spectacular.utils import extend_schema
 class RolesView(generics.ListCreateAPIView):
     queryset = Roles.objects.all()
     serializer_class = RoleSerializer
+    permission_classes = [IsAuthenticated]
 
 @extend_schema(tags=['Usuarios'])
 class ManageRolesView(generics.RetrieveUpdateDestroyAPIView):
     queryset = Roles.objects.all()
     serializer_class = RoleSerializer
+    permission_classes = [IsAuthenticated]
 
 @extend_schema(tags=['Usuarios'])
 class UsersView(generics.ListCreateAPIView):
     queryset = User.objects.all()
     serializer_class = UserSerializer
+    permission_classes = [IsAuthenticated]
 
 @extend_schema(tags=['Usuarios'])
 class ManageUsersView(generics.RetrieveUpdateDestroyAPIView):
     queryset = User.objects.all()
     serializer_class = UserSerializer
+    permission_classes = [IsAuthenticated]
 
 @extend_schema(tags=['Usuarios'])
 class UsersRolesView(generics.ListCreateAPIView):
     queryset = UsersRoles.objects.all()
     serializer_class = UserRoleSerializer
+    permission_classes = [IsAuthenticated]
