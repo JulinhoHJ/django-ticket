@@ -22,4 +22,21 @@ class UsersRoles(models.Model):
         db_column = 'role_id',
         related_name='users_roles'
     )
+    is_active = models.BooleanField(default=True)
+    created_at = models.DateTimeField(auto_now_add=True)
+
+class UsersSedes(models.Model):
+    user = models.ForeignKey(
+        User,
+        on_delete=models.CASCADE,
+        db_column = 'user_id',
+        related_name='users_sedes'
+    )
+    sede = models.ForeignKey(
+        'services.Sedes',
+        on_delete=models.CASCADE,
+        db_column = 'sede_id',
+        related_name='users_sedes'
+    )
+    is_active = models.BooleanField(default=True)
     created_at = models.DateTimeField(auto_now_add=True)

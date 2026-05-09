@@ -14,7 +14,8 @@ from authentication.views import (
     ManageRolesView,
     UsersView,
     ManageUsersView,
-    UsersRolesView
+    UsersRolesView,
+    UsersSedesView
 )
 from transactions.views import (
     TicketsView
@@ -39,6 +40,7 @@ urlpatterns = [
     path('users/', UsersView.as_view()),
     path('users/<int:pk>/', ManageUsersView.as_view()),
     path('users/roles/', UsersRolesView.as_view()),
+    path('users/sedes/', UsersSedesView.as_view()),
 
     path('tickets/', TicketsView.as_view()),
 
