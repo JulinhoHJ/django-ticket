@@ -162,7 +162,7 @@ SPECTACULAR_SETTINGS = {
         },
         {
             'name': 'Transacciones',
-            'description': 'Endpoints para las transacciones'
+            'description': 'Endpoints para los tickets'
         },
         {
             'name': 'Usuarios',

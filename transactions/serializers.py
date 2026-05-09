@@ -3,10 +3,10 @@ from .models import (
     TicketsDetails,
     Tickets
 )
-from authentication.serializers import UserSerializer
 import secrets
 import string
 from datetime import datetime
+from django.db import transaction
 
 class TicketDetailSerializer(serializers.ModelSerializer):
     class Meta:
@@ -38,32 +38,26 @@ class TicketSerializer(serializers.ModelSerializer):
             for _ in range(length)
         )
 
+    @transaction.atomic
     def create(self, validated_data):
-
         ticket_detail_data = validated_data.pop('ticket_detail')
-
         ticket_detail_instance = TicketsDetails.objects.create(
             **ticket_detail_data
         )
 
         year = datetime.now().year
-
         last_ticket = Tickets.objects.filter(
             code__endswith=str(year)
         ).order_by('-id').first()
 
         new_number = 1
-
         if last_ticket:
-
             last_number = int(
                 last_ticket.code.split('-')[1]
             )
-
             new_number = last_number + 1
 
         new_code = f'T-{str(new_number).zfill(6)}-{year}'
-
         access_key = self.generate_access_key()
 
         ticket_instance = Tickets.objects.create(
@@ -73,5 +67,4 @@ class TicketSerializer(serializers.ModelSerializer):
             status='REGISTRADO',
             **validated_data
         )
-
         return ticket_instance
