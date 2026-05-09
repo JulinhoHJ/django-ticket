@@ -16,6 +16,9 @@ from authentication.views import (
     ManageUsersView,
     UsersRolesView
 )
+from transactions.views import (
+    TicketsView
+)
 
 from rest_framework_simplejwt.views import (
     TokenObtainPairView,
@@ -36,6 +39,8 @@ urlpatterns = [
     path('users/', UsersView.as_view()),
     path('users/<int:pk>/', ManageUsersView.as_view()),
     path('users/roles/', UsersRolesView.as_view()),
-    
+
+    path('tickets/', TicketsView.as_view()),
+
     path('auth/login/', TokenObtainPairView.as_view()),
 ]
