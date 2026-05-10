@@ -146,7 +146,7 @@ SPECTACULAR_SETTINGS = {
             'description': 'Servidor de pruebas'
         },
         {
-            'url': 'https://django-barbershop-2o46.onrender.com/',
+            'url': 'https://django-ticket-hp2m.onrender.com/',
             'description': 'Servidor de producción'
         }
     ],
